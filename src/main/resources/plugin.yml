@@ -3,3 +3,14 @@ version: 1.0
 author: Vhbob
 main: io.github.vhorvath2010.proxchat.ProxChat
 api-version: 1.16
+permissions:
+  proximity.bypass.listen:
+    description: Allows users to bypass the proximity requirements when listening
+    default: op
+  proximity.bypass.speak:
+    description: Allows users to bypass the proximity requirements when speaking
+    default: op
+  proximity.bypass.*:
+    children:
+      proximity.bypass.listen: true
+      proximity.bypass.speak: true

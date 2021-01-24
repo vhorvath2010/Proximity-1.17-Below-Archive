@@ -1,2 +1,2 @@
 # This controls how far away (in blocks) a player can be and still hear a chat
-proximity: 25
+chat_range: 25
