@@ -1,0 +1,5 @@
+name: ProximityChat
+version: 1.0
+author: Vhbob
+main: io.github.vhorvath2010.proxchat.ProxChat
+api-version: 1.16
