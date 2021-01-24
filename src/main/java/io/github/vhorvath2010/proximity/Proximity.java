@@ -1,12 +1,12 @@
-package io.github.vhorvath2010.proxchat;
+package io.github.vhorvath2010.proximity;
 
-import io.github.vhorvath2010.proxchat.events.ChatEvents;
+import io.github.vhorvath2010.proximity.events.ChatEvents;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class ProxChat extends JavaPlugin {
+public class Proximity extends JavaPlugin {
 
-    private static ProxChat plugin;
+    private static Proximity plugin;
 
     @Override
     public void onEnable() {
@@ -15,7 +15,7 @@ public class ProxChat extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new ChatEvents(), this);
     }
 
-    public static ProxChat getPlugin() {
+    public static Proximity getPlugin() {
         return plugin;
     }
 }

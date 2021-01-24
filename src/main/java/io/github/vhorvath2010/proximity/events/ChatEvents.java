@@ -1,9 +1,8 @@
-package io.github.vhorvath2010.proxchat.events;
+package io.github.vhorvath2010.proximity.events;
 
-import io.github.vhorvath2010.proxchat.ProxChat;
+import io.github.vhorvath2010.proximity.Proximity;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
-import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -22,7 +21,7 @@ public class ChatEvents implements Listener {
         // Clear recipients and add recipients in radius/with bypass
         Set<Player> recipients = event.getRecipients();
         recipients.clear();
-        double radius = ProxChat.getPlugin().getConfig().getDouble("chat_range");
+        double radius = Proximity.getPlugin().getConfig().getDouble("chat_range");
         for (Entity near : getEntitiesAroundPoint(event.getPlayer().getLocation(), radius)) {
             if (near instanceof Player) {
                 recipients.add((Player) near);

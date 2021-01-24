@@ -1,7 +1,7 @@
-name: ProximityChat
+name: Proximity
 version: 1.0
 author: Vhbob
-main: io.github.vhorvath2010.proxchat.ProxChat
+main: io.github.vhorvath2010.proximity.Proximity
 api-version: 1.16
 permissions:
   proximity.bypass.listen:
