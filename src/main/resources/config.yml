@@ -1,2 +1,9 @@
 # This controls how far away (in blocks) a player can be and still hear a chat
 chat_range: 25
+# This controls how much solid blocks block sound. For example, if one player chats
+# to another player and there are two wooden walls between these players, the sound may
+# be blocked by the walls. This controls how much the "chat_range" is subtracted by for
+# each block in the way. With the default of 10, blocks in the way of someone will reduce
+# their chat range by 10 blocks per "impassable/solid" block between the two chatters.
+# Set to 0 to disable this
+block_muffling: 10
