@@ -3,7 +3,13 @@ version: 1.0
 author: Vhbob
 main: io.github.vhorvath2010.proximity.Proximity
 api-version: 1.16
+commands:
+  Proximity:
+    description: The base command for Proximity
 permissions:
+  proximity.reload:
+    description: Allows users to reload Proximity
+    default: op
   proximity.bypass.listen:
     description: Allows users to bypass the proximity requirements when listening
     default: op
@@ -14,3 +20,7 @@ permissions:
     children:
       proximity.bypass.listen: true
       proximity.bypass.speak: true
+  proximity.*:
+    children:
+      proximity.bypass.*: true
+      proximity.reload: true
