@@ -1,8 +1,7 @@
 name: Proximity
-version: 1.0.1
+version: 1.0.3
 author: Vhbob
 main: io.github.vhorvath2010.proximity.Proximity
-api-version: 1.16
 commands:
   Proximity:
     description: The base command for Proximity
